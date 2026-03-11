@@ -2,28 +2,25 @@
 
 Welcome to my professional portfolio! This is a high-performance, modern, and fully responsive web application built to showcase my journey as a **.NET Developer** and **Full Stack Engineer**. 
 
-![Portfolio Preview](https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=react)
-![Theme](https://img.shields.io/badge/Theme-Pink%20%26%20Black-f8548e?style=for-the-badge)
+---
+
+## Live Demo
+Check out the live version here: **https://atika-tufail-portfolio.netlify.app/**
 
 ---
 
-## 🚀 Live Demo
-Check out the live version here: **[Insert Your Live Link Here]**
+## Features
+
+- **Smart Project Showcase**: Categorized projects (Full-stack, UI/UX, Mobile) with dynamic button rendering.
+- **Dual Resume Viewer**: Real-time PDF preview and download options for both .NET and Full Stack specialized resumes.
+- **Interactive Tech Stack**: Visually stunning "Icon Cards" representing expertise in AI, Data Science, and Web Development.
+- **Custom Branding**: Personal "AT" logo branding with a cohesive premium pink and black aesthetic.
+- **Fully Responsive**: Seamless experience across mobile, tablet, and desktop devices.
+- **High Performance**: Built with **Vite** for near-instant load times and optimized asset delivery.
 
 ---
 
-## ✨ Features
-
-- **🎯 Smart Project Showcase**: Categorized projects (Full-stack, UI/UX, Mobile) with dynamic button rendering.
-- **📄 Dual Resume Viewer**: Real-time PDF preview and download options for both .NET and Full Stack specialized resumes.
-- **🛠️ Interactive Tech Stack**: Visually stunning "Icon Cards" representing expertise in AI, Data Science, and Web Development.
-- **🎨 Custom Branding**: Personal "AT" logo branding with a cohesive premium pink and black aesthetic.
-- **📱 Fully Responsive**: Seamless experience across mobile, tablet, and desktop devices.
-- **⚡ High Performance**: Built with **Vite** for near-instant load times and optimized asset delivery.
-
----
-
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Core**: [React.js](https://reactjs.org/)
 - **Bundler**: [Vite](https://vitejs.dev/)
@@ -34,7 +31,7 @@ Check out the live version here: **[Insert Your Live Link Here]**
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 src/
