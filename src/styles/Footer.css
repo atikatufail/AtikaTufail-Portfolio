@@ -1,0 +1,56 @@
+/* ============================================
+   FOOTER — Footer.jsx styles
+   ============================================ */
+
+.footer {
+    background-color: var(--bg-soft);
+    bottom: 0 !important;
+    padding-top: 15px !important;
+    padding-bottom: 12px !important;
+    border-top: 1px solid var(--border-pink-medium);
+}
+
+.footer-copywright {
+    text-align: center !important;
+}
+
+.footer-body {
+    z-index: 1;
+    text-align: center !important;
+}
+
+.footer h3 {
+    font-size: 0.9em;
+    color: var(--text-body) !important;
+    margin-top: 1.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.footer-icons {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    padding: 0 !important;
+}
+
+.blockquote-footer {
+    color: #a588c0 !important;
+}
+
+/* -- Icon links -- */
+.footer-icon-link {
+    color: var(--color-primary-dark) !important;
+    font-size: 1.8em;
+    transition: color 0.3s ease;
+}
+
+.footer-icon-link:hover {
+    color: var(--color-primary-darker) !important;
+}
+
+@media (max-width: 767px) {
+
+    .footer-copywright,
+    .footer-body {
+        text-align: center !important;
+    }
+}

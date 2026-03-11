@@ -1,0 +1,124 @@
+/* ============================================
+   GLOBALS — CSS Variables, Reset & Base Styles
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ---- CSS Custom Properties (Design Tokens) ---- */
+:root {
+    /* Brand Colors */
+    --color-primary: #1f1e1e;
+    --color-primary-dark: #FF82AE;
+    --color-primary-darker: #f8548e;
+    --color-accent: #1f1e1e;
+    --color-heading: #FF82AE;
+
+    /* Background Colors */
+    --bg-navbar: #f6e7db;
+    --bg-base: #ffffff;
+    --bg-white: #ffffff;
+    --bg-soft: #fff1e5;
+    --bg-card: #f6e7db;
+    --bg-scroll: #f6e7db;
+
+    /* Text Colors */
+    --text-body: #1f1e1e;
+    --text-dark: #FF82AE;
+
+    /* Borders & Shadows */
+    --border-pink-light: rgba(232, 174, 186, 0.15);
+    --border-pink-medium: rgba(232, 174, 186, 0.2);
+    --border-pink-strong: rgba(232, 174, 186, 0.4);
+    --shadow-card: 0 10px 30px rgba(232, 174, 186, 0.1);
+    --shadow-card-hover: 0 15px 40px rgba(232, 174, 186, 0.2);
+    --shadow-icon: 0 5px 15px rgba(212, 141, 163, 0.15);
+
+    /* Font */
+    --font-primary: 'Poppins', sans-serif;
+
+    /* Transitions */
+    --transition-default: all 0.3s ease-out 0s;
+}
+
+/* ---- Base Reset ---- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--bg-white) !important;
+    --section-background-color: var(--bg-white);
+    --image-gradient: none;
+    --imp-text-color: var(--color-primary);
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-primary) !important;
+    color: var(--text-body) !important;
+    background-color: var(--bg-base) !important;
+    background-image: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Typography ---- */
+h1,
+h2,
+h3,
+.main-name {
+    font-family: var(--font-primary) !important;
+    font-weight: 600 !important;
+    color: var(--color-heading) !important;
+}
+
+/* ---- Utility Classes ---- */
+.purple {
+    color: var(--imp-text-color) !important;
+}
+
+.icon-colour {
+    color: var(--color-primary-dark) !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-scroll);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary-dark);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-darker);
+    border-radius: 12px;
+}
+
+/* ---- Particles ---- */
+#tsparticles {
+    position: fixed !important;
+    z-index: 0 !important;
+    pointer-events: none;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+}
+
+/* ---- No-scroll lock (used during preloader) ---- */
+#no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}

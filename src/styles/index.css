@@ -1,0 +1,22 @@
+/* ============================================
+   STYLES INDEX — Master CSS Entry Point
+   
+   All component styles are imported here.
+   App.jsx imports ONLY this file.
+   ============================================ */
+
+/* 1. Global variables, resets & base styles */
+@import './globals.css';
+
+/* 2. Preloader */
+@import './Pre.css';
+
+/* 3. Layout components */
+@import './Navbar.css';
+@import './Footer.css';
+
+/* 4. Page sections */
+@import './Home.css';
+@import './About.css';
+@import './Projects.css';
+@import './Resume.css';

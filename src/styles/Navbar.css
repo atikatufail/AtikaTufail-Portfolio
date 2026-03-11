@@ -1,0 +1,140 @@
+/* ============================================
+   NAVBAR — Navbar.jsx styles
+   ============================================ */
+
+.sticky {
+    background-color: var(--bg-navbar) !important;
+    transition: var(--transition-default) !important;
+    box-shadow: 0px 5px 15px rgba(232, 174, 186, 0.1) !important;
+    backdrop-filter: blur(15px) !important;
+    border-bottom: 1px solid var(--border-pink-medium);
+}
+
+.navbar {
+    position: fixed !important;
+    transition: var(--transition-default) !important;
+    padding: 0.5rem 2rem !important;
+    font-size: 1.1rem !important;
+    background-color: var(--bg-navbar) !important;
+}
+
+/* -- Hamburger toggler -- */
+.navbar-toggler {
+    position: relative !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.navbar-toggler span {
+    display: block !important;
+    background-color: var(--color-primary) !important;
+    height: 3px !important;
+    width: 25px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    transform: rotate(0deg) !important;
+    left: 0 !important;
+    opacity: 1 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0 !important;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+    transition: transform 0.35s ease-in-out !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute !important;
+    left: 12px !important;
+    top: 10px !important;
+    transform: rotate(135deg) !important;
+    opacity: 0.9 !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px !important;
+    visibility: hidden !important;
+    background-color: transparent !important;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute !important;
+    left: 12px !important;
+    top: 10px !important;
+    transform: rotate(-135deg) !important;
+    opacity: 0.9 !important;
+}
+
+/* -- Brand & Logo -- */
+.navbar-brand {
+    color: var(--color-primary-dark) !important;
+    font-weight: bold !important;
+}
+
+.logo {
+    display: inline-block;
+}
+
+/* -- Nav Links -- */
+.navbar-nav .nav-link {
+    color: var(--text-dark) !important;
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+    font-weight: 500;
+}
+
+.nav-link {
+    padding: 0.8rem 1rem !important;
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-item a {
+    font-weight: 400;
+    transition: var(--transition-default);
+    position: relative;
+    z-index: 1;
+}
+
+/* -- Underline hover animation -- */
+.navbar-nav .nav-item a::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 0;
+    border-radius: 16px;
+    background: var(--color-primary);
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+    transition: var(--transition-default);
+}
+
+.navbar-nav .nav-item a:hover::after {
+    width: 100%;
+}
+
+/* -- Responsive -- */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 1rem 2rem !important;
+        font-size: 1.3rem !important;
+        background-color: var(--bg-white) !important;
+    }
+
+    .navbar-nav .nav-item a::after {
+        display: none !important;
+    }
+
+    .nav-link {
+        padding: 0.7rem 1rem !important;
+    }
+}
